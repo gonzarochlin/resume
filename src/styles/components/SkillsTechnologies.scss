@@ -1,0 +1,19 @@
+@import '../_variables.scss';
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .skill {
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0.2rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}

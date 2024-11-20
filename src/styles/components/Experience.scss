@@ -1,0 +1,59 @@
+@import '../_variables.scss';
+
+
+.experience {
+    .jobs-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .job {
+            display: flex;
+            flex-direction: column;
+            max-width: 20rem;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            border: 1px solid $border-color;
+            transition: all 0.3s;
+
+            &:hover {
+                border: none;
+                box-shadow: 11px 12px 20px 2px rgba(0,0,0,0.4);
+                -webkit-box-shadow: 11px 12px 20px 2px rgba(0,0,0,0.4);
+                -moz-box-shadow: 11px 12px 20px 2px rgba(0,0,0,0.4);
+                transform: rotate(2deg) scale(1.1);
+            }
+    
+            h3 {
+                text-align: center;
+                font-size: 1.5rem;
+                color: $heading-color;
+            }
+    
+            .role {
+                text-align: center;
+                font-size: 1rem;
+                color: $highlight-color;
+                font-weight: bold;
+                margin: 0.5rem;
+            }
+
+            .date {
+                text-align: center;
+                font-size: 0.9rem;
+                color: $highlight-color;
+                margin: 0.5rem;
+            }
+    
+            ul {
+                margin-top: 0.5rem;
+                list-style: circle;
+                padding-left: 1.5rem;
+    
+                li {
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+    }
+}

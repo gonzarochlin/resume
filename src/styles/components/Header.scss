@@ -1,0 +1,55 @@
+@import '../_variables.scss';
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
+    color: $text-color;
+    text-align: center;
+    padding: 2rem 0;
+    height: 100vh;
+    transition: height 2s;
+
+    &.header-scrolled {
+        height: 10rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0.5rem;
+        color: $header-text-color;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0.5rem;
+        color: $header-text-color;
+        max-width: 80%;
+    }
+
+    .header-links {
+        margin-top: 1rem;
+
+        a {
+            color: $header-text-color;
+            font-weight: bold;
+            margin: 0 1rem;
+            display: inline-flex;
+            align-items: center;
+
+            svg {
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                color: #d1e8ff;
+            }
+        }
+    }
+}

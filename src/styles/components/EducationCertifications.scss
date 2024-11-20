@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+
+
+.education {
+    .education-item {
+        margin-bottom: 1.5rem;
+
+        h3 {
+            font-size: 1.2rem;
+            color: $heading-color;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $text-color;
+        }
+    }
+
+    ul {
+        margin-top: 1rem;
+        list-style: square;
+        padding-left: 1.5rem;
+
+        li {
+            margin: 0.5rem 0;
+        }
+    }
+}
